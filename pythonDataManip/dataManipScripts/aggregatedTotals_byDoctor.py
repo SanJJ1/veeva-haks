@@ -1,7 +1,7 @@
 import pandas as pd
 from scipy import stats
 
-df = pd.read_csv("./Prescriber_Data.csv")
+df = pd.read_csv("../Prescriber_Data.csv")
 
 total_nrx = []
 total_trx = []

@@ -1,7 +1,7 @@
 import pandas as pd
 from scipy import stats
 
-df = pd.read_csv("./Prescriber_Data_by_state.csv")
+df = pd.read_csv("../state-data/Prescriber_Data_by_state.csv")
 
 slopes = [[], [], [], [], []]
 for i in range(len(df.index)):

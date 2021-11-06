@@ -12,7 +12,7 @@ states["header"] = ["lat", "lon",
                     "CountZ", "NRxZ", "TRxZ", [0] * 6, [0] * 6,
                     ]
 print(states["header"])
-with open('state-data/states.csv', newline='') as csvfile:
+with open('../state-data/states.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',')
     for row in spamreader:
         states[row[0]] = [0] * len(states["header"])
@@ -24,7 +24,7 @@ with open('state-data/states.csv', newline='') as csvfile:
 
 
 x = []
-with open('Prescriber_Data.csv', newline='') as csvfile:
+with open('../Prescriber_Data.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',')
     for row in spamreader:
         x += [row]

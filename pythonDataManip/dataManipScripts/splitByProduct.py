@@ -3,7 +3,7 @@ import numpy as np
 
 import csv
 x = []
-with open('Prescriber_Data.csv', newline='') as csvfile:
+with open('../Prescriber_Data.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',')
     for row in spamreader:
         x += [row]
