@@ -71,29 +71,18 @@ for i in x:
 
 print(states)
 
+months = []
+for i in states:
+    month = []
 
 
 
-# print(h)
-# print(x[0])
-# print(x[0][5:11])
-# print(x[0][11:])
-
-outputs = []
-import json
-
-for state in states:
-    output = []
-
-    output.append(state)
-    output += states[state]
-    outputs.append(output)
-
-print(outputs)
-
-with open("Prescriber_Data_by_state.csv", 'w', newline='') as csvfile:
-    spamwriter = csv.writer(csvfile, delimiter=',')
-    spamwriter.writerows(outputs)
+#
+# print(outputs)
+#
+# with open("Prescriber_Data_by_state.csv", 'w', newline='') as csvfile:
+#     spamwriter = csv.writer(csvfile, delimiter=',')
+#     spamwriter.writerows(outputs)
 
 
 
