@@ -73,12 +73,6 @@ print(states)
 
 
 
-
-# print(h)
-# print(x[0])
-# print(x[0][5:11])
-# print(x[0][11:])
-
 outputs = []
 import json
 
