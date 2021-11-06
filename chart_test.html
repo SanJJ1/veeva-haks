@@ -9,16 +9,17 @@
 
 <body>
     <div>
-        <canvas id="myChart" width="400" height="400"></canvas>
+        
+        <canvas id="myChart"  width="500" height="800"></canvas>
     </div>
     <script>
         const labels = [
-            'January',
-            'February',
-            'March',
-            'April',
-            'May',
-            'June',
+            'Month1',
+            'Month2',
+            'Month3',
+            'Month4',
+            'Month5',
+            'Month6',
         ];
         const data = {
             labels: labels,
@@ -30,12 +31,17 @@
             }]
         };
         const config = {
-            type: 'line',
+            type: 'bar',
             data: data,
             options: {}
         };
+        options: {
+                responsive: false
+                maintainAspectRatio: false
+            };
         const myChart = new Chart(
             document.getElementById('myChart'),
+            
             config
         );
     </script>
