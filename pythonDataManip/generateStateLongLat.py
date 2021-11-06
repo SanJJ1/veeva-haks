@@ -122,7 +122,7 @@ x = [[i[0] + " " + i[1]] + i[2:] if len(i) > 3 else i for i in x]
 print(x)
 
 
-with open(f"shit.csv", 'w', newline='') as csvfile:
+with open(f"states.csv", 'w', newline='') as csvfile:
     spamwriter = csv.writer(csvfile, delimiter=',')
     spamwriter.writerows(x)
 
