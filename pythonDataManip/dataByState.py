@@ -11,7 +11,7 @@ states["header"] = ["lat", "lon",
                     "CountNo", "NRxNo", "TRxNo", [0] * 6,
                     "CountZ", "NRxZ", "TRxZ", [0] * 6,
                     ]
-with open('states.csv', newline='') as csvfile:
+with open('state-data/states.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',')
     for row in spamreader:
         states[row[0]] = [0] * len(states["header"])
@@ -63,7 +63,7 @@ import json
 # for state in states:
 
 
-# with open("Prescriber_Data.csv", 'w', newline='') as csvfile:
+# with open("Prescriber_Data2.csv", 'w', newline='') as csvfile:
 #     spamwriter = csv.writer(csvfile, delimiter=',')
 #     spamwriter.writerows(z)
 
