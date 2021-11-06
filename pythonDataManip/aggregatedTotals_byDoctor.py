@@ -12,7 +12,7 @@ for i in range(len(df.index)):
     sum2 = 0
     arr_n = []
     arr_t = []
-    for j in range(1, 6):
+    for j in range(1, 7):
         valn = df[str('NRx_Month_' + str(j))][i]
         valt = df[str('TRx_Month_' + str(j))][i]
         sum1 += valn
@@ -21,8 +21,8 @@ for i in range(len(df.index)):
         arr_t.append(valt)
     total_nrx.append(sum1)
     total_trx.append(sum2)
-    res_n = stats.linregress(list(range(1, 6)), arr_n)
-    res_t = stats.linregress(list(range(1, 6)), arr_t)
+    res_n = stats.linregress(list(range(1, 7)), arr_n)
+    res_t = stats.linregress(list(range(1, 7)), arr_t)
     slope_n.append(round(res_n.slope, 2))
     slope_t.append(round(res_t.slope, 2))
 
