@@ -14,7 +14,7 @@ path:hover {
 div.tooltip {   
  	position: absolute;           
 	text-align: center;           
-	width: 60px;                  
+	width: 90px;                  
 	height: 28px;                 
 	padding: 2px;             
 	font: 12px sans-serif;        
@@ -26,7 +26,7 @@ div.tooltip {
         
 /* Legend Font Style */
 body {
-	font: 11px sans-serif;
+	font: 14px sans-serif;
 }
         
 /* Legend Position Style */
@@ -54,7 +54,7 @@ http://bl.ocks.org/mbostock/3888852  */
 
 		
 //Width and height of map
-var width = 960;
+var width = 1200;
 var height = 500;
 
 // D3 Projection
@@ -123,7 +123,7 @@ svg.selectAll("path")
 	.append("path")
 	.attr("d", path)
 	.style("stroke", "#fff")
-	.style("stroke-width", "1")
+	.style("stroke-width", "2")
 	.style("fill", function(d) {
 
 	// Get data value
@@ -140,7 +140,7 @@ svg.selectAll("path")
 
 		 
 // Map the cities I have lived in!
-d3.csv("cities-lived.csv", function(data) {
+d3.csv("state-data.csv", function(data) {
 
 svg.selectAll("circle")
 	.data(data)
@@ -153,7 +153,7 @@ svg.selectAll("circle")
 		return projection([d.lon, d.lat])[1];
 	})
 	.attr("r", function(d) {
-		return Math.sqrt(d.years) * 4;
+		return 4;
 	})
 		.style("fill", "rgb(217,91,67)")	
 		.style("opacity", 0.85)	
