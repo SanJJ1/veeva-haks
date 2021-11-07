@@ -3,14 +3,13 @@ import numpy as np
 
 import csv
 
-states = {}
-states["header"] = ["lat", "lon",
-                    "CountT", "NRxT", "TRxT", [0] * 6, [0] * 6,
-                    "CountC", "NRxC", "TRxC", [0] * 6, [0] * 6,
-                    "CountNa", "NRxNa", "TRxNa", [0] * 6, [0] * 6,
-                    "CountNo", "NRxNo", "TRxNo", [0] * 6, [0] * 6,
-                    "CountZ", "NRxZ", "TRxZ", [0] * 6, [0] * 6,
-                    ]
+states = {"header": ["lat", "lon",
+                     "CountT", "NRxT", "TRxT", [0] * 6, [0] * 6,
+                     "CountC", "NRxC", "TRxC", [0] * 6, [0] * 6,
+                     "CountNa", "NRxNa", "TRxNa", [0] * 6, [0] * 6,
+                     "CountNo", "NRxNo", "TRxNo", [0] * 6, [0] * 6,
+                     "CountZ", "NRxZ", "TRxZ", [0] * 6, [0] * 6,
+                     ]}
 print(states["header"])
 with open('../state-data/states.csv', newline='') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=',')
