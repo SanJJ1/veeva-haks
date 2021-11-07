@@ -34,7 +34,9 @@ Colors:
 /**************************/
 /*     General Styles     */
 /**************************/
-body,
+
+
+/* body,
 html {
     width: 100%;
 	height: 100%;
@@ -1301,5 +1303,5 @@ a:hover.back-to-top {
 		right: -200px;
 	}
 	/* end of contact */
-}
+} */
 /* end of min-width 1200px */
